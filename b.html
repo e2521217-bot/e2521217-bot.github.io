@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamu HASEGAWA">
+    <meta name="keywords" content="html, css, javascript">
+    <title>大学生活について ｜ 最終課題版</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>大学生活について</h1>
+            <nav>
+                <a href="index.html">ホーム</a>
+                <a href="a.html">バドミントン経歴</a>
+                <a href="b.html" class="active">大学生活</a>
+            </nav>
+        </header>
+
+        <!-- パソコンで横並び、スマホで縦並びになるようクラスを設定 -->
+        <main class="life-grid">
+
+            <section class="card">
+                <h2>運営役員</h2>
+                <p class="sub-title">第55回創大祭運営役員 ｜ 庶庶務部門部門員</p>
+                <h3>内容</h3>
+                <p>・ディスカバリーホールでのクラブ演目やシンポジウムの着任</p>
+                <p>・オープニングパレードの着任</p>
+                <h3>感想</h3>
+                <p>・創立者の振る舞いを体現する尊さを感じた。</p>
+                <p>・笑顔で来場者を迎えることの大切さを学んだ。</p>
+                <p>・人のために尽くすことの素晴らしさを感じた。</p>
+                <video src="Uneiyakuin₋video.jpg.mp4" controls class="life-video"></video>
+                
+                <!-- JavaScript拡張：いいねボタン -->
+                <div class="like-container">
+                    <button class="like-btn" data-id="u">👍 運営役員を応援！ (<span id="count-u">0</span>)</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>自治会役員</h2>
+                <p class="sub-title">2C広報部</p>
+                <h3>内容</h3>
+                <p>・イベントごとの学生新聞の発刊</p>
+                <p>・Instagram、Webサイトの運営</p>
+                <p>・若き創立者の集い、学生大会の着任</p>
+                <img src="Jichikai₋photo.jpg.jpg" alt="自治会活動" class="life-img">
+                
+                <!-- JavaScript拡張：いいねボタン -->
+                <div class="like-container">
+                    <button class="like-btn" data-id="j">👍 広報活動を応援！ (<span id="count-j">0</span>)</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>部活動</h2>
+                <p class="sub-title">女子バドミントン部 ｜ 会計</p>
+                <h3>活動内容</h3>
+                <p>・月・水・金・(土)の練習</p>
+                <p>・新総合体育館、白百合体育館で活動</p>
+                <p>・春合宿</p>
+                <p>・春と秋の団体戦、個人戦に出場</p>
+                <img src="S__47325189.jpg" alt="女子バドミントン部" class="life-img">
+                
+                <!-- JavaScript拡張：いいねボタン -->
+                <div class="like-container">
+                    <button class="like-btn" data-id="b">👍 バド部を応援！ (<span id="count-b">0</span>)</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; Yuna NAKAYAMA, All Rights Reserved.</p>
+        </footer>
+
+    </div> 
+    
+    <!-- JavaScriptの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>

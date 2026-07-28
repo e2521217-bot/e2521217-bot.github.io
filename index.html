@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamu HASEGAWA">
+    <meta name="keywords" content="html, css, javascript">
+    <title>中山悠那のHP ｜ 最終課題版</title>
+    <!-- 講義の指定通り、cssフォルダ内のmain.cssを読み込みます -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header id="top">
+        <h1>中山悠那のHP</h1>
+        <nav>
+            <a href="index.html" class="active">ホーム</a>
+            <a href="a.html">バドミントン経歴</a>
+            <a href="b.html">大学生活</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>自己紹介</h2>
+            <div class="profile-list">
+                <p><span>氏名：</span>中山悠那</p>
+                <p><span>誕生日：</span>2006/09/22</p>
+                <p><span>出身：</span>東京都</p>
+                <p><span>学部：</span>経営学部経営学科</p>
+                <p><span>所属：</span>学生自治会広報部・バドミントン部</p>
+                <p><span>趣味：</span>散歩・ショッピング</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>家族紹介</h2>
+            <p class="hint-text">💡名前をクリックすると、詳しい紹介が見られます！</p>
+            
+            <div class="family-box">
+                <!-- JSで読み込む用のデータ（data-hobby）を仕込んでいます -->
+                <h3 class="family-click" data-hobby="週末はパドックのチェックを欠かしません！">父：中山正一</h3>
+                <p>1月21日生まれ / 出身：京都府 / 趣味：競馬観戦</p>
+
+                <h3 class="family-click" data-hobby="最近は国内の恋愛ドラマを一気見しています！">母：中山幸恵</h3>
+                <p>2月6日生まれ / 出身：愛知県 / 趣味：ドラマ鑑賞</p>
+
+                <h3 class="family-click" data-hobby="特に冷えたレモンサワーが好きで、家族で飲むこともあります！">姉：中山藍那</h3>
+                <p>5月10日生まれ / 出身：愛知県 / 趣味：お酒</p>
+
+                <h3 class="family-click" data-hobby="ポジションはショートで、毎日部活を頑張っています！">弟：中山創太朗</h3>
+                <p>1月13日生まれ / 出身：東京都 / 趣味：野球</p>
+            </div>
+            
+            <!-- JSでクリックされた時のメッセージを表示するエリア -->
+            <div id="hobbyPopup" class="hobby-popup-box" style="display: none;">
+                <p id="popupText"></p>
+            </div>
+        </section>
+
+        <p class="text-center"><a href="#top" class="btn-top">▲ トップに戻る</a></p>
+    </main>
+
+    <aside>
+        <section class="card text-center">
+            <h2>家族写真</h2>
+            <!-- ファイル名は講義のもの（.jpg.jpg）に合わせています -->
+            <img src="family_photo.jpg.jpg" alt="家族写真" class="family-img">
+        </section>
+
+        <section class="card">
+            <h2>その他詳細情報</h2>
+            <ul class="info-links">
+                <li><a href="a.html">バドミントン経歴</a></li>
+                <li><a href="b.html">大学生活について</a></li>
+            </ul>
+        </section>
+    </aside>
+
+    <footer>
+        Copyright &copy; Yuna NAKAYAMA, All Rights Reserved.
+    </footer>
+
+</div>
+
+<!-- JavaScriptの読み込みを一番下に追加 -->
+<script src="script.js"></script>
+</body>
+</html>
